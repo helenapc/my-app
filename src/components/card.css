@@ -1,0 +1,18 @@
+.card {
+    display: inline-table;
+    width: 15rem;
+    height: 15rem;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background: #e2e2e2;
+    border-radius: 20px;
+    box-shadow: #c3c3c3 8px 8px 8px, #fff -8px -8px 8px;
+}
+
+img {
+    height: 14rem;
+    filter: brightness(1.4);
+    filter: contrast(1);
+    mix-blend-mode: darken;
+}

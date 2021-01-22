@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// @ts-check
+
+import React, { useState } from "react";
+import "./App.css";
+import "./components/card.css";
+import Card from "./components/card";
+import data from "./data.json";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const [dataJson, setDataJson] = useState(data);
 
+  const showCard = () => {
+    return dataJson.map((task) => (
+      <Card
+        key={task.id}
+        id={task.id}
+        description={task.description}
+        price={task.price*2} //MULTIPLY
+      />
+    ));
+  };
+
+  return <div>{showCard()}</div>;
+}
 export default App;

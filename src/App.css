@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Comfortaa", cursive, sans-serif;
 }
 
-div {
-    background: #e2e2e2;
+.items-cards {
+    background: #ecf0f3;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
 }

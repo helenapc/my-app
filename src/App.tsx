@@ -15,11 +15,17 @@ function App() {
         key={task.id}
         id={task.id}
         description={task.description}
-        price={task.price*2} //MULTIPLY
+        price={task.price * 1} //MULTIPLY
       />
     ));
   };
 
-  return <div>{showCard()}</div>;
+  return (
+  <div className="bk">
+    <div className="items-cards">
+    {showCard()}
+    </div>
+  </div>
+  );
 }
 export default App;

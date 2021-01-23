@@ -1,52 +1,14 @@
-[{
-        "id": "aa1103",
-        "description": "anillo",
-        "price": 400
-    },
-    {
-        "id": "aa1105",
-        "description": "anillo",
-        "price": 500
-    },
-    {
-        "id": "aa1106",
-        "description": "anillo",
-        "price": 600
-    },
-    {
-        "id": "aa1110",
-        "description": "anillo",
-        "price": 1000
-    },
-    {
-        "id": "apo1103",
-        "description": "anillo",
-        "price": 250
-    },
-    {
-        "id": "apo1116",
-        "description": "anillo",
-        "price": 680
-    },
-    {
-        "id": "apo1119",
-        "description": "anillo",
-        "price": 800
-    },
-    {
-        "id": "ca1103",
-        "description": "cadena",
-        "price": 1700
-    },
-    {
-        "id": "da1106",
-        "description": "dije",
-        "price": 430
-    },
-    {
-        "id": "pepe",
-        "description": "el pepe",
-        "price": 0
-    }
-
+[
+    { "id": "aa1103", "price": 400, "description": "anillo" },
+    { "id": "aa1105", "price": 500, "description": "anillo" },
+    { "id": "aa1106", "price": 600, "description": "anillo" },
+    { "id": "aa1110", "price": 1000, "description": "anillo" },
+    { "id": "apo1103", "price": 250, "description": "anillo" },
+    { "id": "apo1116", "price": 680, "description": "anillo" },
+    { "id": "apo1119", "price": 800, "description": "anillo" },
+    { "id": "ca1103", "price": 1700, "description": "cadena" },
+    { "id": "da1106", "price": 430, "description": "dije" },
+    { "id": "pepe", "price": 0, "description": "el pepe" },
+    { "id": "tienda-de-joyas", "price": 2500, "description": "Anillo (prueba)" },
+    { "id": "anillo", "price": 12345, "description": "anillo (prueba)" }
 ]

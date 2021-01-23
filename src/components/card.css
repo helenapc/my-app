@@ -12,7 +12,7 @@
 
 img {
     height: 140px;
-    margin: 20px;
+    margin: 15px;
     filter: saturate(1.2) brightness(1.1);
     transition-duration: 0.5s;
 }
@@ -27,19 +27,30 @@ img {
     transition-duration: 0.5s;
 }
 
-.card p:nth-child(1),
-.card p:nth-child(3) {
+.card p:nth-child(1) {
+    text-transform: uppercase;
+}
+
+.card p:nth-child(2),
+.card p:nth-child(3),
+.card p:nth-child(4) {
     text-transform: capitalize;
     font-weight: 800;
 }
 
-.card p:nth-child(4) {
+.card p:nth-child(5) {
     text-decoration-line: line-through;
     color: #666666;
 }
 
+.card p:nth-child(5),
+.card p:nth-child(6) {
+    display: inline-block;
+}
+
 p {
     margin: 5px;
+    letter-spacing: 2px;
 }
 
 
@@ -56,6 +67,7 @@ button
     padding: 10px;
     width: 80%;
     color: #fff;
+    /* border-radius: 8px; */
     background: #000;
 }
 

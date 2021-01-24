@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/diamantina/static/css/main.06069dea.chunk.css",
+    "main.js": "/diamantina/static/js/main.7a209c45.chunk.js",
+    "main.js.map": "/diamantina/static/js/main.7a209c45.chunk.js.map",
+    "runtime-main.js": "/diamantina/static/js/runtime-main.02a29a25.js",
+    "runtime-main.js.map": "/diamantina/static/js/runtime-main.02a29a25.js.map",
+    "static/js/2.50c25c16.chunk.js": "/diamantina/static/js/2.50c25c16.chunk.js",
+    "static/js/2.50c25c16.chunk.js.map": "/diamantina/static/js/2.50c25c16.chunk.js.map",
+    "static/js/3.a0ddaf22.chunk.js": "/diamantina/static/js/3.a0ddaf22.chunk.js",
+    "static/js/3.a0ddaf22.chunk.js.map": "/diamantina/static/js/3.a0ddaf22.chunk.js.map",
+    "index.html": "/diamantina/index.html",
+    "service-worker.js": "/diamantina/service-worker.js",
+    "service-worker.js.map": "/diamantina/service-worker.js.map",
+    "static/css/main.06069dea.chunk.css.map": "/diamantina/static/css/main.06069dea.chunk.css.map",
+    "static/js/2.50c25c16.chunk.js.LICENSE.txt": "/diamantina/static/js/2.50c25c16.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02a29a25.js",
+    "static/js/2.50c25c16.chunk.js",
+    "static/css/main.06069dea.chunk.css",
+    "static/js/main.7a209c45.chunk.js"
+  ]
+}

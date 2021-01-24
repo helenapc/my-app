@@ -8,7 +8,7 @@
     { "id": "apo1119", "price": 800, "description": "anillo" },
     { "id": "ca1103", "price": 1700, "description": "cadena" },
     { "id": "da1106", "price": 430, "description": "dije" },
-    { "id": "pepe", "price": 0, "description": "el pepe" },
     { "id": "tienda-de-joyas", "price": 2500, "description": "Anillo (prueba)" },
-    { "id": "anillo", "price": 12345, "description": "anillo (prueba)" }
+    { "id": "anillo", "price": 12345, "description": "anillo (prueba)" },
+    { "id": "c0001", "price": 4850, "description": "Prueba" }
 ]

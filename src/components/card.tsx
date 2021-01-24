@@ -1,46 +1,32 @@
 // @ts-check
-import React from "react";
+import React, { useState } from "react";
+import data from "../data.json";
 
-interface IProps {
-  id: string;
-  description: string;
-  price: number;
-  key: string;
-}
+const Card = (): any => {
+  const porcentaje: number = 10;
+  const [newData] = useState(data);
 
+  
 
-const Card = (props: IProps) => {
-
-  const test = (id: string) => {
-    console.log("id: " + id);
-  };
-
-  const testDiv = (id: string) => {
-    console.log("Divid: " + id);
-
-  };
-
-  const porcentaje: number = 30;
-  return (
-    <div className="card">
-      <p>#{props.id}</p>
-      <img
-        src={"/img/" + props.id + ".png"}
-        alt=""
-        onClick={() => testDiv(props.id)}
-      />
-      <p>{props.description}</p>
-      <p>${Math.round(props.price - (props.price * porcentaje) / 100)}</p>
-      <p>(${Math.round(props.price)})</p>
+  return newData.map((e) => (
+    <div key={e.id} className="card">
+      {/* <p>Diamantina</p> */}
+      <p>#{e.id}</p>
+      <img src={"/img/" + e.id + ".png"} alt="" />
+      <p>{e.description}</p>
+      <p>${Math.round(e.price - (e.price * porcentaje) / 100)}</p>
+      <p>(${Math.round(e.price)})</p>
       <p>-{porcentaje}%</p>
-      <button type="submit" className="btn-shop" onClick={() => test(props.id)}>
+
+      <button type="submit" className="btn-shop">
         Comprar
       </button>
+
       <button type="submit" className="btn-shop">
         Agregar al carro
       </button>
     </div>
-  );
+  ));
 };
 
 export default Card;

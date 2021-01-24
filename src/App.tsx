@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import "./App.css";
-import "./components/card.css";
+import "./components/Card.css";
 import BtnModal from "./components/BtnModal";
 import Modal from "./components/Modal";
 import Card from "./components/Card";

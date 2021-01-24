@@ -6,8 +6,6 @@ const Card = (): any => {
   const porcentaje: number = 10;
   const [newData] = useState(data);
 
-  
-
   return newData.map((e) => (
     <div key={e.id} className="card">
       {/* <p>Diamantina</p> */}
@@ -20,10 +18,6 @@ const Card = (): any => {
 
       <button type="submit" className="btn-shop">
         Comprar
-      </button>
-
-      <button type="submit" className="btn-shop">
-        Agregar al carro
       </button>
     </div>
   ));

@@ -5,7 +5,7 @@ import "./App.css";
 import "./components/Card.css";
 import BtnModal from "./components/BtnModal";
 import Modal from "./components/Modal";
-import Card from "./components/card";
+import Card from "./components/Card";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);

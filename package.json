@@ -30,7 +30,7 @@
         "workbox-streams": "^5.1.4"
     },
     "scripts": {
-        "predeploy": "npm run build && echo 'helenapc.github.io/my-app' > ./build/CNAME ",
+        "predeploy": "npm run build && echo 'https://helenapc.github.io/my-app/' > ./build/CNAME ",
         "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",

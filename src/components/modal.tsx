@@ -1,16 +1,26 @@
-import React from 'react'
+import React from "react";
 
-interface IModal{
-    open:Boolean;
+interface IModal {
+  id: string;
+    open: Boolean;
+//   open: () => Boolean;
 }
+
+const styleModal = {
+  height: "200px",
+  width: "200px",
+  background: "red",
+  zIndex: 100,
+};
 
 const Modal = (props: IModal) => {
-    if (!props.open) return null;
-    return (
-        <div>
-            <h1>hola</h1>
-        </div>
-    )
-}
+  if (!props.open) return null;
+  return (
+    <div style={styleModal}>
+      <img src={"/img/" + props.id + ".png"} alt=" " />
+      <h1>{props.id}</h1>
+    </div>
+  );
+};
 
 export default Modal;

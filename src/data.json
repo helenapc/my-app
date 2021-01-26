@@ -1,14 +1,14 @@
 [
-    { "id": "aa1103", "price": 400, "description": "anillo" },
-    { "id": "aa1105", "price": 500, "description": "anillo" },
-    { "id": "aa1106", "price": 600, "description": "anillo" },
-    { "id": "aa1110", "price": 1000, "description": "anillo" },
-    { "id": "apo1103", "price": 250, "description": "anillo" },
-    { "id": "apo1116", "price": 680, "description": "anillo" },
-    { "id": "apo1119", "price": 800, "description": "anillo" },
-    { "id": "ca1103", "price": 1700, "description": "cadena" },
-    { "id": "da1106", "price": 430, "description": "dije" },
-    { "id": "tienda-de-joyas", "price": 2500, "description": "Anillo (prueba)" },
-    { "id": "anillo", "price": 12345, "description": "anillo (prueba)" },
-    { "id": "c0001", "price": 4850, "description": "Prueba" }
+    { "id": "aa1103", "price": 400, "description": "anillo", "check": false },
+    { "id": "aa1105", "price": 500, "description": "anillo", "check": false },
+    { "id": "aa1106", "price": 600, "description": "anillo", "check": false },
+    { "id": "aa1110", "price": 1000, "description": "anillo", "check": false },
+    { "id": "apo1103", "price": 250, "description": "anillo", "check": false },
+    { "id": "apo1116", "price": 680, "description": "anillo", "check": false },
+    { "id": "apo1119", "price": 800, "description": "anillo", "check": false },
+    { "id": "ca1103", "price": 1700, "description": "cadena", "check": false },
+    { "id": "da1106", "price": 430, "description": "dije", "check": false },
+    { "id": "tienda-de-joyas", "price": 2500, "description": "Anillo (prueba)", "check": false },
+    { "id": "anillo", "price": 12345, "description": "anillo (prueba)", "check": false },
+    { "id": "c0001", "price": 4850, "description": "Prueba", "check": false }
 ]

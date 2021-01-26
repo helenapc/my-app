@@ -28,24 +28,28 @@ img {
     transition-duration: 0.5s;
 }
 
-.card p:nth-child(1) {
+.card p:nth-child(1),
+.card p:nth-child(2) {
     text-transform: uppercase;
 }
 
-.card p:nth-child(2),
-.card p:nth-child(3),
-.card p:nth-child(4) {
+.card p:nth-child(2) {
+    font-size: 0.7rem;
+}
+
+.card p:nth-child(4),
+.card p:nth-child(5) {
     text-transform: capitalize;
     font-weight: 800;
 }
 
-.card p:nth-child(5) {
+.card p:nth-child(6) {
     text-decoration-line: line-through;
     color: #666666;
 }
 
-.card p:nth-child(5),
-.card p:nth-child(6) {
+.card p:nth-child(6),
+.card p:nth-child(7) {
     display: inline-block;
 }
 
@@ -66,7 +70,7 @@ button
 
 .btn-shop {
     cursor: pointer;
-    margin: 15px;
+    margin: 8px;
     padding: 10px;
     width: 80%;
     color: #fff;

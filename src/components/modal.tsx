@@ -1,15 +1,4 @@
-import React from "react";
-import "./Modal.css";
-
-// const styleModal = {
-//   height: "200px",
-//   width: "200px",
-//   background: "red",
-// };
-
 const Modal = (props: IModal) => {
-
-
 
   if (!props.open) return null;
   return (

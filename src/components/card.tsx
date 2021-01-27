@@ -2,16 +2,11 @@
 import React, { useState } from "react";
 import data from "../data.json";
 import BtnAdd from "./BtnAdd";
-// import CardImg from "./CardImg";
 import Modal from "./Modal";
 
 const Card = (): any => {
   const porcentaje: number = 10;
   const [dataJson, setDataJson] = useState(data);
-
-  // const [openModal] = useState(false);
-
-  // const [state, setstate] = useState(initialState)
 
   const chk = (chk: string): any => {
     const tempData = [...dataJson];
@@ -46,10 +41,6 @@ const Card = (): any => {
 
       <BtnAdd id={e.id} check={e.check} onClick={() => chk(e.id)} />
       <Modal id={e.id} open={e.modal} onClick={() => modal(e.id)}/>
-
-      {/* <button onClick={() => chk(e.id)} style={{background: e.check ? '#fff' : '#000', color: e.check ? '#000' : '#fff'}} type="submit" className="btn-shop">
-        {!e.check ? 'Agregar al carrito 🛒' : 'Agregado 😀'}
-      </button> */}
 
     </div>
   ));

@@ -1,4 +1,5 @@
 import React from "react";
+// import "./BtnAdd.css"
 
 export default function BtnAdd(props: IBnt) {
   return (
@@ -8,7 +9,7 @@ export default function BtnAdd(props: IBnt) {
       type="submit"
       className="btn-shop"
     >
-      {!props.check ? "Agregar al carrito 🛒" : "Agregado 🛒"}
+      {!props.check ? "Agregar al carro 🛒" : "Agregado 🛒"}
     </button>
   );
 }

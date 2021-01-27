@@ -1,0 +1,36 @@
+.btn-shop {
+    cursor: pointer;
+    margin: 2px 0;
+    padding: 10px;
+    width: 90%;
+    color: #fff;
+    background: #000;
+}
+
+.btn-shop:hover {
+    color: #000;
+    background: #fff;
+}
+
+.btn-shop:active {
+    background: #c2c2c2;
+}
+
+@media (max-width: 700px) {
+    .btn-shop {
+        transform: translateY(-5px);
+        font-size: 0.3rem;
+        padding: 5px;
+        margin-top: 1px;
+    }
+}
+
+
+/* @media (min-height: 700px) {
+    .btn-shop {
+        transform: translateY(-5px);
+        font-size: 0.3rem;
+        padding: 5px;
+        margin-top: 1px;
+    }
+} */

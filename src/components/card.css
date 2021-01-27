@@ -1,8 +1,8 @@
 .card {
-    width: 270px;
+    width: 220px;
     height: 370px;
     text-align: center;
-    margin: 20px 20px;
+    margin: 20px 9px;
     padding: 10px;
     background: #ecf0f3;
     border-radius: 10px;
@@ -10,20 +10,15 @@
     transition-duration: 0.5s;
 }
 
-img {
+.img {
     height: 140px;
     margin: 15px;
     filter: saturate(1.2) brightness(1.1);
     transition-duration: 0.5s;
 }
 
-.card:hover {
-    /* background: #fbfcfd; */
-    transform: scale(1.03);
-    transition-duration: 0.2s;
-}
-
-.card:hover img {
+.img:hover {
+    cursor: zoom-in;
     transform: scale(1.4);
     transition-duration: 0.5s;
 }
@@ -54,34 +49,36 @@ img {
 }
 
 p {
-    /* z-index: 500; */
-    /* transform: scaleZ(4); */
     margin: 5px;
     letter-spacing: 2px;
 }
 
-
-/* 
-
-
-
-button
-*/
-
-.btn-shop {
-    cursor: pointer;
-    margin: 8px;
-    padding: 10px;
-    width: 80%;
-    color: #fff;
-    background: #000;
-}
-
-.btn-shop:hover {
-    color: #000;
-    background: #fff;
-}
-
-.btn-shop:active {
-    background: #c2c2c2;
+@media (max-width: 700px) {
+    .card {
+        width: 115px;
+        height: 180px;
+        margin: 10px 5px;
+        padding: 5px;
+        box-shadow: 4px 4px 4px #d1cbcb, -4px -4px 4px #ffffff;
+    }
+    .img {
+        height: 65px;
+        margin: 5px;
+    }
+    p {
+        font-size: 0.5rem;
+        margin: 4px;
+    }
+    .card p:nth-child(2) {
+        font-size: 0.3rem;
+    }
+    .card p:nth-child(4),
+    .card p:nth-child(5) {
+        margin: 2px 2px;
+    }
+    .card p:nth-child(6),
+    .card p:nth-child(7) {
+        transform: translateY(-5px);
+        margin: 0 2px;
+    }
 }

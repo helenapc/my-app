@@ -2,12 +2,14 @@
 import React, { useState } from "react";
 import data from "../data.json";
 import BtnAdd from "./BtnAdd";
+// import CardImg from "./CardImg";
 import Modal from "./Modal";
 
 const Card = (): any => {
   const porcentaje: number = 10;
   const [dataJson, setDataJson] = useState(data);
-  const [openModal, setOpenModal] = useState(false);
+
+  // const [openModal] = useState(false);
 
   // const [state, setstate] = useState(initialState)
 
@@ -19,14 +21,14 @@ const Card = (): any => {
     setDataJson(tempData);
   };
 
-  let tempOpenModal = openModal;
 
-  const modal = (valor: string) => {
-    // dataJson.map((evModal) => {
-    //   return evModal.id === valor ? (tempOpenModal = !openModal) : null;
-    // });
-    // setOpenModal(tempOpenModal);
-    console.log(valor)
+  const modal = (modal: string) => {
+    console.log('ok');
+    const tempModal = [...dataJson];
+    tempModal.map((ev) => {
+      return (ev.modal = (ev.id === modal) ? !ev.modal : false) ;
+    });
+    setDataJson(tempModal);
   };
 
 
@@ -35,8 +37,7 @@ const Card = (): any => {
       <p>Diamantina</p>
       <p>#{e.id}</p>
 
-      <img onClick={() => modal(e.id)} src={"/img/" + e.id + ".png"} alt=" " />
-
+      <img className="img" onClick={() => modal(e.id)} src={"/img/" + e.id + ".png"} alt=" " />
 
       <p>{e.description}</p>
       <p>${Math.round(e.price - (e.price * porcentaje) / 100)}</p>
@@ -44,7 +45,7 @@ const Card = (): any => {
       <p>-{porcentaje}%</p>
 
       <BtnAdd id={e.id} check={e.check} onClick={() => chk(e.id)} />
-      <Modal id={e.id} open={openModal} />
+      <Modal id={e.id} open={e.modal} onClick={() => modal(e.id)}/>
 
       {/* <button onClick={() => chk(e.id)} style={{background: e.check ? '#fff' : '#000', color: e.check ? '#000' : '#fff'}} type="submit" className="btn-shop">
         {!e.check ? 'Agregar al carrito 🛒' : 'Agregado 😀'}

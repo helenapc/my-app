@@ -1,0 +1,59 @@
+.modal {
+    position: fixed;
+    width: 80vh;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #d1cbcb, -8px -8px 8px #ffffff;
+    z-index: 10;
+}
+
+
+/* .modal button::before {
+    content: 'cerrar';
+    position: absolute;
+    top: 10px;
+    font-size: 0.7rem;
+} */
+
+.modal button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: #ecf0f3;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+}
+
+.imgModal {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bkModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ecf0f380;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+}
+
+@media (orientation: portrait) {
+    .modal {
+        width: 90vw;
+        height: 90vw;
+        background: #ecf0f3;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px #d1cbcb, -4px -4px 4px #ffffff;
+    }
+}

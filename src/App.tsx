@@ -1,21 +1,15 @@
 // @ts-check
 
-// import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import "./components/Card.css";
-// import BtnModal from "./components/BtnModal";
-// import Modal from "./components/Modal";
+import "./components/BtnAdd.css";
 import Card from "./components/Card";
 
 function App() {
-  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      {/* <BtnModal open={isOpen} /> */}
-      {/* <button onClick={() => setIsOpen(!isOpen)}>Modal(OK)</button> */}
-      {/* <Modal open={isOpen} /> */}
-
       <div className="items-cards">
         <Card />
       </div>

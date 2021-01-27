@@ -14,18 +14,3 @@
     justify-content: space-around;
     flex-flow: wrap;
 }
-
-
-/* modal */
-
-.modal {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: 1;
-    display: flex;
-    margin: auto;
-    height: 400px;
-    width: 400px;
-    background-color: red;
-}

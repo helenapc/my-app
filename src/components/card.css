@@ -10,6 +10,18 @@
     transition-duration: 0.5s;
 }
 
+.cardTwo {
+    width: 220px;
+    height: 280px;
+    text-align: center;
+    margin: 20px 9px;
+    padding: 10px;
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #d1cbcb, -8px -8px 8px #ffffff;
+    transition-duration: 0.5s;
+}
+
 .img {
     height: 140px;
     margin: 15px;
@@ -19,7 +31,7 @@
 
 .img:hover {
     cursor: zoom-in;
-    transform: scale(1.4);
+    transform: scale(1.2);
     transition-duration: 0.5s;
 }
 
@@ -48,7 +60,31 @@
     display: inline-block;
 }
 
-p {
+.card p {
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+
+/* TWO */
+
+.cardTwo p:nth-child(2),
+.cardTwo p:nth-child(3) {
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.cardTwo p:nth-child(4) {
+    text-decoration-line: line-through;
+    color: #666666;
+}
+
+.cardTwo p:nth-child(4),
+.cardTwo p:nth-child(5) {
+    display: inline-block;
+}
+
+.cardTwo p {
     margin: 5px;
     letter-spacing: 2px;
 }
@@ -61,11 +97,22 @@ p {
         padding: 5px;
         box-shadow: 4px 4px 4px #d1cbcb, -4px -4px 4px #ffffff;
     }
+    .cardTwo {
+        width: 115px;
+        height: 130px;
+        margin: 10px 5px;
+        padding: 5px;
+        box-shadow: 4px 4px 4px #d1cbcb, -4px -4px 4px #ffffff;
+    }
     .img {
         height: 65px;
         margin: 5px;
     }
-    p {
+    .card p {
+        font-size: 0.5rem;
+        margin: 4px;
+    }
+    .cardTwo p {
         font-size: 0.5rem;
         margin: 4px;
     }
@@ -78,6 +125,16 @@ p {
     }
     .card p:nth-child(6),
     .card p:nth-child(7) {
+        transform: translateY(-5px);
+        margin: 0 2px;
+    }
+    /* TWO */
+    .cardTwo p:nth-child(2),
+    .cardTwo p:nth-child(3) {
+        margin: 2px 2px;
+    }
+    .cardTwo p:nth-child(4),
+    .cardTwo p:nth-child(5) {
         transform: translateY(-5px);
         margin: 0 2px;
     }

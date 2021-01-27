@@ -1,14 +1,14 @@
 [
-    { "id": "aa1103", "price": 400, "description": "anillo", "check": false, "modal": false, "type": "anillo" },
-    { "id": "aa1105", "price": 500, "description": "anillo", "check": false, "modal": false, "type": "anillo" },
-    { "id": "aa1106", "price": 600, "description": "anillo", "check": false, "modal": false, "type": "anillo" },
-    { "id": "aa1110", "price": 1000, "description": "anillo", "check": false, "modal": false, "type": "anillo" },
-    { "id": "apo1103", "price": 250, "description": "anillo", "check": false, "modal": false, "type": "anillo" },
-    { "id": "apo1116", "price": 680, "description": "anillo", "check": false, "modal": false, "type": "anillo" },
-    { "id": "apo1119", "price": 800, "description": "anillo", "check": false, "modal": false, "type": "anillo" },
-    { "id": "ca1103", "price": 1700, "description": "cadena", "check": false, "modal": false, "type": "cadena" },
-    { "id": "da1106", "price": 430, "description": "dije", "check": false, "modal": false, "type": "dije" },
-    { "id": "tienda-de-joyas", "price": 2500, "description": "Anillo (prueba)", "check": false, "modal": false, "type": "anillo" },
-    { "id": "anillo", "price": 12345, "description": "anillo (prueba)", "check": false, "modal": false, "type": "anillo" },
-    { "id": "c0001", "price": 4850, "description": "Prueba", "check": false, "modal": false, "type": "anillo" }
+    { "id": "aa1103", "price": 400, "description": "anillo plata", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "aa1105", "price": 500, "description": "anillo plata", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "aa1106", "price": 600, "description": "anillo plata", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "aa1110", "price": 1000, "description": "anillo plata", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "apo1103", "price": 250, "description": "anillo plata-oro", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "apo1116", "price": 680, "description": "anillo plata-oro", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "apo1119", "price": 800, "description": "anillo plata-oro", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "ca1103", "price": 1700, "description": "cadena acero", "check": false, "modal": false, "type": "cadena", "show": true },
+    { "id": "da1106", "price": 430, "description": "dije acero", "check": false, "modal": false, "type": "dije", "show": true },
+    { "id": "tienda-de-joyas", "price": 2500, "description": "Anillo (prueba)", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "anillo", "price": 12345, "description": "anillo (prueba)", "check": false, "modal": false, "type": "anillo", "show": true },
+    { "id": "c0001", "price": 4850, "description": "Prueba", "check": false, "modal": false, "type": "anillo", "show": true }
 ]

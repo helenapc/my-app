@@ -12,7 +12,7 @@ import CardTwo from "./components/CardTwo";
 function App() {
   const [dataJson, setDataJson] = useState(data);
 
-  console.log("test");
+  console.log("init");
 
   // const [stateFiltro, setStateFiltro] = useState('todo')
 
@@ -63,16 +63,16 @@ function App() {
     <div>
       {/* <button onClick={() => filter()}> useState </button> */}
 
-      <div>
-        <div className="nav">
-          <h1>Diamantina</h1>
-          <div className="link">
-            <p onClick={() => console.log("Home")}>Home</p>
-            <p onClick={() => console.log("News")}>News</p>
-            <p onClick={() => console.log("Contact")}>Contact</p>
-            <p onClick={() => console.log("About")}>About</p>
-            <button>☰</button>
-          </div>
+      <div className="nav">
+        <h1>Diamantina</h1>
+        <div className="link">
+          {/* TRANSFORMAR EL MISMO BOTON */}
+          <button>☰</button>
+          {/* <button>✕</button> */}
+          <p onClick={() => console.log("Home")}>Home</p>
+          <p onClick={() => console.log("News")}>News</p>
+          <p onClick={() => console.log("Contact")}>Contact</p>
+          <p onClick={() => console.log("About")}>About</p>
         </div>
       </div>
 

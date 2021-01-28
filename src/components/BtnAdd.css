@@ -16,7 +16,7 @@
     background: #c2c2c2;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
     .btn-shop {
         transform: translateY(-5px);
         font-size: 0.3rem;

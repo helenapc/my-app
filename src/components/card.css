@@ -89,24 +89,27 @@
     letter-spacing: 2px;
 }
 
-@media (max-width: 770px) {
+
+/* @media (max-width: 700px) { */
+
+@media (max-width: 580px) {
     .card {
         width: 115px;
-        height: 180px;
+        height: 190px;
         margin: 10px 5px;
         padding: 5px;
         box-shadow: 4px 4px 4px #d1cbcb, -4px -4px 4px #ffffff;
     }
     .cardTwo {
-        width: 115px;
-        height: 130px;
+        width: 110px;
+        height: 140px;
         margin: 10px 5px;
         padding: 5px;
         box-shadow: 4px 4px 4px #d1cbcb, -4px -4px 4px #ffffff;
     }
     .img {
-        height: 65px;
-        margin: 5px;
+        height: 70px;
+        margin: 8px;
     }
     .card p {
         font-size: 0.5rem;
@@ -114,7 +117,7 @@
     }
     .cardTwo p {
         font-size: 0.5rem;
-        margin: 4px;
+        margin: 2px;
     }
     .card p:nth-child(2) {
         font-size: 0.3rem;
@@ -131,7 +134,7 @@
     /* TWO */
     .cardTwo p:nth-child(2),
     .cardTwo p:nth-child(3) {
-        margin: 2px 2px;
+        margin: 1px 2px;
     }
     .cardTwo p:nth-child(4),
     .cardTwo p:nth-child(5) {

@@ -1,0 +1,43 @@
+.lateral-bar {
+    /* padding: 20px; */
+    z-index: 1100;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    /* transform: translateX(-100%); */
+    /* transform: translateY(-50%); */
+    transform: translate(-100%, -50%);
+    transition-duration: 0.5s;
+    /* overflow: hidden; */
+}
+
+.lateral-bar a {
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #fff;
+    border-bottom: #d1cbcb solid 1px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.show-bar {
+    /* transform: translateX(0%); */
+    transform: translate(0px, -50%);
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+@media (min-width: 700px) {
+    .show-bar {
+        transform: translateX(-100%);
+        /* transform: translate(0px, -50%); */
+        /* overflow: auto; */
+    }
+}

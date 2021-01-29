@@ -17,11 +17,7 @@ const Card = (): any => {
     setDataJson(tempData);
   };
 
-  // console.log('test')
-
-
   const modal = (modal: string) => {
-    // console.log('ok');
     const tempModal = [...dataJson];
     tempModal.map((ev) => {
       return (ev.modal = (ev.id === modal) ? !ev.modal : false) ;

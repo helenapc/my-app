@@ -15,7 +15,7 @@ const Card = (): any => {
     setDataJson(tempModal);
   };
 
-
+  
   return dataJson.map((e) => (
     <div key={e.id} className="cardTwo">
       {/* <p>Diamantina</p> */}

@@ -91,6 +91,8 @@ function App() {
           <a href="#tag01">Tag01</a>
           <a href="#tag02">Tag02</a>
           <a href="#tag03">Tag03</a>
+          <a href="#home">🙍‍♂️</a>
+          <a href="#home">🛒</a>
         </div>
       </div>
 

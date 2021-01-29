@@ -7,7 +7,7 @@
     height: 100%;
     /* transform: translateX(-100%); */
     /* transform: translateY(-50%); */
-    transform: translate(-100%, -50%);
+    transform: translate(-100%, -400px);
     transition-duration: 0.5s;
     /* overflow: hidden; */
 }
@@ -27,7 +27,7 @@
 
 .show-bar {
     /* transform: translateX(0%); */
-    transform: translate(0px, -50%);
+    transform: translate(0px, -400px);
 }
 
 .overflow {
@@ -36,8 +36,8 @@
 
 @media (min-width: 700px) {
     .show-bar {
-        transform: translateX(-100%);
-        /* transform: translate(0px, -50%); */
+        /* transform: translateX(-100%); */
+        transform: translate(0px, -400px);
         /* overflow: auto; */
     }
 }

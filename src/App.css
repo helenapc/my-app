@@ -7,10 +7,8 @@
 }
 
 .items-cards {
-    /* z-index: 999; */
     background: #ecf0f3;
     padding: 20px 20px 20px 20px;
-    /* transform: translateY(50px); */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -59,17 +57,21 @@
 .div {
     display: block;
     text-align: center;
-    padding: 75px 15px 15px 15px;
+    padding: 75px 15px 20px 15px;
+    /* padding: 15px; */
     /* margin-top: 80px; */
     font-size: 1.5rem;
+    /* background: #000; */
+    background: linear-gradient(180deg, #ecf0f3 45%, #000 45%);
+    color: #fff;
 }
 
 .title {
-    height: 50vh;
-    background: url("./bk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: -30px;
+    height: 450px;
+    background: url("./bk.jpg") no-repeat 50% center/cover;
+    background-color: #ecf0f3;
+    background-size: auto 130%;
+    margin-bottom: -50px;
 }
 
 @media (max-width: 700px) {
@@ -77,8 +79,17 @@
         display: block;
         text-align: center;
     }
-    .nav .link a {
+    .nav .link a:nth-child(2),
+    .nav .link a:nth-child(3),
+    .nav .link a:nth-child(4),
+    .nav .link a:nth-child(5) {
         display: none;
+    }
+    .nav .link a:nth-child(6),
+    .nav .link a:nth-child(7) {
+        /* display: none; */
+        margin: 0 5px;
+        transform: translateY(-50px);
     }
     .nav .link button:nth-child(1) {
         cursor: pointer;

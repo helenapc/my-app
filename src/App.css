@@ -6,6 +6,10 @@
     font-family: "Comfortaa", cursive, sans-serif;
 }
 
+body {
+    background: #ecf0f3;
+}
+
 .items-cards {
     background: #ecf0f3;
     padding: 20px 20px 20px 20px;
@@ -15,111 +19,16 @@
     flex-flow: wrap;
 }
 
-.nav {
-    position: sticky;
-    top: 0px;
-    background: #fff;
-    box-shadow: inset 0px -2px 10px #d1cbcb;
-    z-index: 99;
-}
-
-.nav .link {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    margin: 5px 0px 0px 0px;
-}
-
-.nav .link a {
-    user-select: none;
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
-    letter-spacing: 2px;
-    color: #000;
-    text-decoration: none;
-}
-
-.nav h1 {
-    user-select: none;
-    display: inline-block;
-    padding: 10px;
-    margin: auto 20px;
-    color: #000;
-    text-decoration: none;
-}
-
-.nav .link button {
-    display: none;
-}
-
 .div {
     display: block;
     text-align: center;
     padding: 75px 15px 20px 15px;
-    /* padding: 15px; */
-    /* margin-top: 80px; */
     font-size: 1.5rem;
-    /* background: #000; */
-    background: linear-gradient(180deg, #ecf0f3 45%, #000 45%);
+    background: linear-gradient(180deg, #0e8dee00 45%, #000 45%);
     color: #fff;
 }
 
-.title {
-    height: 450px;
-    background: url("./bk.jpg") no-repeat 50% center/cover;
-    background-color: #ecf0f3;
-    background-size: auto 130%;
-    margin-bottom: -50px;
-}
-
 @media (max-width: 700px) {
-    .nav h1 {
-        display: block;
-        text-align: center;
-    }
-    .nav .link a:nth-child(2),
-    .nav .link a:nth-child(3),
-    .nav .link a:nth-child(4),
-    .nav .link a:nth-child(5) {
-        display: none;
-    }
-    .nav .link a:nth-child(6),
-    .nav .link a:nth-child(7) {
-        /* display: none; */
-        margin: 0 5px;
-        transform: translateY(-50px);
-    }
-    .nav .link button:nth-child(1) {
-        cursor: pointer;
-        display: inline-block;
-        position: fixed;
-        background: #fff;
-        width: 40px;
-        height: 40px;
-        top: 6px;
-        left: 10px;
-        z-index: 100;
-        /* border: 3px solid #ecf0f3; */
-        border: none;
-        outline: none;
-    }
-    /* .nav .link button:nth-child(2) {
-        cursor: pointer;
-        display: inline-block;
-        position: fixed;
-        background: #fff;
-        color: #000;
-        font-size: 1.5rem;
-        width: 40px;
-        height: 40px;
-        top: 6px;
-        right: 10px;
-        z-index: 100;
-        border: none;
-        outline: none;
-    } */
     .div {
         font-size: 1rem;
     }

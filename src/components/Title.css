@@ -1,0 +1,13 @@
+.title {
+    height: 400px;
+    /* height: 100vh; */
+    background: url("../bk2.jpg") no-repeat 50% center/cover;
+    background-size: auto 130%;
+    margin-bottom: -50px;
+}
+
+@media (max-width: 700px) {
+    .title {
+        height: 50vh;
+    }
+}

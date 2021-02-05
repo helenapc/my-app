@@ -5,6 +5,8 @@ import "./App.css";
 import "./components/Card.css";
 import "./components/BtnAdd.css";
 import "./components/Modal.css";
+import "./components/Nav.css";
+import "./components/Title.css";
 import "./components/LateralBar.css";
 import Card from "./components/Card";
 
@@ -14,7 +16,6 @@ import CardTwo from "./components/CardTwo";
 function App() {
   // const [dataJson, setDataJson] = useState(data);
 
-  console.log("init");
   console.log(document.body.clientWidth);
 
   // const [stateFiltro, setStateFiltro] = useState('todo')
@@ -66,19 +67,19 @@ function App() {
   const lateralBar = () => {
     if (bar[0].classList.contains("show-bar")) {
       bar[0].classList.remove("show-bar");
-      document.body.classList.remove('overflow')
+      document.body.classList.remove("overflow");
     } else {
       bar[0].classList.add("show-bar");
-      document.body.classList.add('overflow')
+      document.body.classList.add("overflow");
     }
   };
 
   return (
     <div className="mainApp" id="home">
       {/* <button onClick={() => filter()}> useState </button> */}
-
       <div className="nav">
         <h1>Diamantina</h1>
+        {/* <button className="update">update</button> */}
         <div className="link">
           <button onClick={() => lateralBar()}>☰</button>
           {/* <button onClick={() => lateralBar()}>
@@ -87,35 +88,63 @@ function App() {
             <b>_</b>
           </button> */}
           {/* <button>✕</button> */}
-          <a href="#home">Inicio</a>
+
+          {/* <a href="#home">Inicio</a>
           <a href="#tag01">Tag01</a>
           <a href="#tag02">Tag02</a>
           <a href="#tag03">Tag03</a>
-          <a href="#home">🙍‍♂️</a>
-          <a href="#home">🛒</a>
+          <a href="#home">🙍‍♂</a>
+          <a href="#home">🛒</a> */}
+
+          <a className="nav-text update" href="/" onClick={() => console.log('update')}>Update</a>
+          <a className="nav-text" href="#home">Inicio</a>
+          <a className="nav-text" href="#tag01">Tag01</a>
+          <a className="nav-text" href="#tag02">Tag02</a>
+          <a className="nav-text" href="#tag03">Tag03</a>
+          <a id="account" href="#home">🙍‍♂</a>
+          <a id="shop" href="#home">🛒</a>
         </div>
       </div>
 
       <div className="title"></div>
 
       <div className="lateral-bar">
-        <a href={"#home"} onClick={() => lateralBar()}>Home</a>
-        <a href={"#tag01"} onClick={() => lateralBar()}>Tag01</a>
-        <a href={"#tag02"} onClick={() => lateralBar()}>Tag02</a>
-        <a href={"#tag03"} onClick={() => lateralBar()}>tag03</a>
+        <a href={"/"} onClick={() => console.log('update')}>
+          Update
+        </a>
+        <a href={"#home"} onClick={() => lateralBar()}>
+          Home
+        </a>
+        <a href={"#tag01"} onClick={() => lateralBar()}>
+          Tag01
+        </a>
+        <a href={"#tag02"} onClick={() => lateralBar()}>
+          Tag02
+        </a>
+        <a href={"#tag03"} onClick={() => lateralBar()}>
+          tag03
+        </a>
       </div>
-      <h1 id="tag01" className="div">Tag01</h1>
+
+      <h1 id="tag01" className="div">
+        Tag01
+      </h1>
       <div className="items-cards">
         {/* <Card filtro={stateFiltro}/> */}
         <CardTwo />
       </div>
-      <h1 id="tag02" className="div">Tag02</h1>
+      <h1 id="tag02" className="div">
+        Tag02
+      </h1>
       <div className="items-cards">
         {/* <Card filtro={stateFiltro}/> */}
         <Card />
       </div>
-      <h1 id="tag03" className="div">Tag03</h1>
-      <div className="items-cards">{/* <Card filtro={stateFiltro}/> */}
+      <h1 id="tag03" className="div">
+        Tag03
+      </h1>
+      <div className="items-cards">
+        {/* <Card filtro={stateFiltro}/> */}
         <Card />
       </div>
     </div>

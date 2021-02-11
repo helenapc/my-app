@@ -84,10 +84,10 @@ function App() {
 
         <div className="link">
           <button onClick={() => lateralBar()}>☰</button>
-          <a className="nav-text" href="#home">Inicio</a>
-          <a className="nav-text" href="#tag01">Tag01</a>
-          <a className="nav-text" href="#tag02">Tag02</a>
-          <a className="nav-text" href="#tag03">Tag03</a>
+          <a className="nav-text" href="#Inicio">Inicio</a>
+          <a className="nav-text" href="#Anillos">Anillos</a>
+          <a className="nav-text" href="#Cadenas">Cadenas</a>
+          <a className="nav-text" href="#Dijes">Dijes</a>
           <a id="account" href="#home">🙍‍♂</a>
           <a id="shop" href="#home">🛒</a>
         </div>
@@ -98,32 +98,34 @@ function App() {
       <div className="title"></div>
 
       <div className="lateral-bar">
-        <a href={"#home"} onClick={() => lateralBar()}>Home</a>
-        <a href={"#tag01"} onClick={() => lateralBar()}>Tag01</a>
-        <a href={"#tag02"} onClick={() => lateralBar()}>Tag02</a>
-        <a href={"#tag03"} onClick={() => lateralBar()}>tag03</a>
+        <a href={"#Inicio"} onClick={() => lateralBar()}>Inicio</a>
+        <a href={"#Anillos"} onClick={() => lateralBar()}>Anillos</a>
+        <a href={"#Cadenas"} onClick={() => lateralBar()}>Cadenas</a>
+        <a href={"#Dijes"} onClick={() => lateralBar()}>Dijes</a>
       </div>
 
-      <h1 id="tag01" className="div">
-        Tag01
-      </h1>
+      <h1 id="Anillos" className="div">Anillos</h1>
       <div className="items-cards">
         {/* <Card filtro={stateFiltro}/> */}
-        <CardTwo />
+        <CardTwo type='anillo' />
       </div>
-      <h1 id="tag02" className="div">
-        Tag02
-      </h1>
+
+      <h1 id="Anillos2" className="div">Anillos2</h1>
       <div className="items-cards">
         {/* <Card filtro={stateFiltro}/> */}
-        <Card />
+        <Card type='anillo'/>
       </div>
-      <h1 id="tag03" className="div">
-        Tag03
-      </h1>
+
+      <h1 id="Cadenas" className="div">Cadenas</h1>
       <div className="items-cards">
         {/* <Card filtro={stateFiltro}/> */}
-        <Card />
+        <Card type='cadena'/>
+      </div>
+      
+      <h1 id="Dijes" className="div">Dijes</h1>
+      <div className="items-cards">
+        {/* <Card filtro={stateFiltro}/> */}
+        <Card type='dije'/>
       </div>
     </div>
   );

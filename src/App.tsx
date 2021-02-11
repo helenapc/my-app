@@ -80,23 +80,10 @@ function App() {
       <div className="nav">
         <h1>Diamantina</h1>
         {/* <button className="update">update</button> */}
+
+
         <div className="link">
           <button onClick={() => lateralBar()}>☰</button>
-          {/* <button onClick={() => lateralBar()}>
-            <b>_</b>
-            <b>_</b>
-            <b>_</b>
-          </button> */}
-          {/* <button>✕</button> */}
-
-          {/* <a href="#home">Inicio</a>
-          <a href="#tag01">Tag01</a>
-          <a href="#tag02">Tag02</a>
-          <a href="#tag03">Tag03</a>
-          <a href="#home">🙍‍♂</a>
-          <a href="#home">🛒</a> */}
-
-          <a className="nav-text update" href="/" onClick={() => console.log('update')}>Update</a>
           <a className="nav-text" href="#home">Inicio</a>
           <a className="nav-text" href="#tag01">Tag01</a>
           <a className="nav-text" href="#tag02">Tag02</a>
@@ -104,26 +91,17 @@ function App() {
           <a id="account" href="#home">🙍‍♂</a>
           <a id="shop" href="#home">🛒</a>
         </div>
+
+
       </div>
 
       <div className="title"></div>
 
       <div className="lateral-bar">
-        <a href={"/"} onClick={() => console.log('update')}>
-          Update
-        </a>
-        <a href={"#home"} onClick={() => lateralBar()}>
-          Home
-        </a>
-        <a href={"#tag01"} onClick={() => lateralBar()}>
-          Tag01
-        </a>
-        <a href={"#tag02"} onClick={() => lateralBar()}>
-          Tag02
-        </a>
-        <a href={"#tag03"} onClick={() => lateralBar()}>
-          tag03
-        </a>
+        <a href={"#home"} onClick={() => lateralBar()}>Home</a>
+        <a href={"#tag01"} onClick={() => lateralBar()}>Tag01</a>
+        <a href={"#tag02"} onClick={() => lateralBar()}>Tag02</a>
+        <a href={"#tag03"} onClick={() => lateralBar()}>tag03</a>
       </div>
 
       <h1 id="tag01" className="div">

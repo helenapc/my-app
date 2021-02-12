@@ -10,6 +10,8 @@ import "./components/Title.css";
 import "./components/LateralBar.css";
 import Card from "./components/Card";
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 // import data from "./data.json";
 import CardTwo from "./components/CardTwo";
 
@@ -76,57 +78,101 @@ function App() {
 
   return (
     <div className="mainApp" id="home">
-      {/* <button onClick={() => filter()}> useState </button> */}
       <div className="nav">
         <h1>Diamantina</h1>
-        {/* <button className="update">update</button> */}
-
 
         <div className="link">
           <button onClick={() => lateralBar()}>☰</button>
-          <a className="nav-text" href="#Inicio">Inicio</a>
-          <a className="nav-text" href="#Anillos">Anillos</a>
-          <a className="nav-text" href="#Cadenas">Cadenas</a>
-          <a className="nav-text" href="#Dijes">Dijes</a>
-          <a id="account" href="#home">🙍‍♂</a>
-          <a id="shop" href="#home">🛒</a>
+          <a className="nav-text" href="/#home">
+            Inicio
+          </a>
+          <a className="nav-text" href="/#Anillos">
+            Anillos
+          </a>{" "}
+          {/* &#709; */}
+          <a className="nav-text" href="/#Cadenas">
+            Cadenas
+          </a>
+          <a className="nav-text" href="/#Dijes">
+            Dijes
+          </a>
+          <a className="nav-text" href="/#Contacto">
+            Contacto
+          </a>
+          <a id="account" href="/account">
+            🙍‍♂
+          </a>
+          <a id="shop" href="/test">
+            🛒
+          </a>
         </div>
-
-
       </div>
-
-      <div className="title"></div>
 
       <div className="lateral-bar">
-        <a href={"#Inicio"} onClick={() => lateralBar()}>Inicio</a>
-        <a href={"#Anillos"} onClick={() => lateralBar()}>Anillos</a>
-        <a href={"#Cadenas"} onClick={() => lateralBar()}>Cadenas</a>
-        <a href={"#Dijes"} onClick={() => lateralBar()}>Dijes</a>
+        <a href={"/#home"} onClick={() => lateralBar()}>
+          Inicio
+        </a>
+        <a href={"/#Anillos"} onClick={() => lateralBar()}>
+          Anillos
+        </a>
+        <a href={"/#Cadenas"} onClick={() => lateralBar()}>
+          Cadenas
+        </a>
+        <a href={"/#Dijes"} onClick={() => lateralBar()}>
+          Dijes
+        </a>
+        <a href={"/#Contacto"} onClick={() => lateralBar()}>
+          Contacto
+        </a>
       </div>
 
-      <h1 id="Anillos" className="div">Anillos</h1>
-      <div className="items-cards">
-        {/* <Card filtro={stateFiltro}/> */}
-        <CardTwo type='anillo' />
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <div className="title"></div>
 
-      <h1 id="Anillos2" className="div">Anillos2</h1>
-      <div className="items-cards">
-        {/* <Card filtro={stateFiltro}/> */}
-        <Card type='anillo'/>
-      </div>
+            <h1 id="Anillos" className="div">
+              Anillos
+            </h1>
+            <div className="items-cards">
+              <CardTwo type="anillo" />
+            </div>
+            <div className="items-cards">
+              <Card type="anillo" />
+            </div>
 
-      <h1 id="Cadenas" className="div">Cadenas</h1>
-      <div className="items-cards">
-        {/* <Card filtro={stateFiltro}/> */}
-        <Card type='cadena'/>
-      </div>
-      
-      <h1 id="Dijes" className="div">Dijes</h1>
-      <div className="items-cards">
-        {/* <Card filtro={stateFiltro}/> */}
-        <Card type='dije'/>
-      </div>
+            <h1 id="Cadenas" className="div">
+              Cadenas
+            </h1>
+            <div className="items-cards">
+              <Card type="cadena" />
+            </div>
+
+            <h1 id="Dijes" className="div">
+              Dijes
+            </h1>
+            <div className="items-cards">
+              <Card type="dije" />
+            </div>
+            <div id="Contacto">
+              <ul>
+                <li>CONTACTO</li>
+                <li>CONTACTO</li>
+                <li>CONTACTO</li>
+                <li>CONTACTO</li>
+              </ul>
+            </div>
+          </Route>
+
+          <Route exact path="/test">
+            <h1>hola</h1>
+          </Route>
+
+          <Route exact path="/account">
+            <h1>cuenta</h1>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

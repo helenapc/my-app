@@ -28,6 +28,23 @@ body {
     color: #fff;
 }
 
+#Contacto {
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #555;
+    /* text-align: center; */
+}
+
+#Contacto li {
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+    list-style: none;
+}
+
 @media (max-width: 700px) {
     .div {
         font-size: 1rem;

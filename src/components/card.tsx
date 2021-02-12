@@ -55,7 +55,8 @@ const Card = (props: ICardTwo): any => {
           <p>{e.description}</p>
           <p>${Math.round(e.price - (e.price * porcentaje) / 100)}</p>
           <p>(${Math.round(e.price)})</p>
-          <p>-{porcentaje}%</p>
+          {/* <p>-{porcentaje}%</p> */}
+          {/* <b>Bla bla bla</b> */}
 
           <BtnAdd id={e.id} check={e.check} onClick={() => chk(e.id)} />
           <Modal

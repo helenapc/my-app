@@ -1,7 +1,6 @@
 [
     { "id": "aa1103", "price": 400, "description": "anillo plata", "check": false, "modal": false, "type": "anillo", "show": true },
     { "id": "aa1105", "price": 500, "description": "anillo plata", "check": false, "modal": false, "type": "anillo", "show": true },
-    { "id": "aa1106", "price": 600, "description": "anillo plata", "check": false, "modal": false, "type": "anillo", "show": true },
     { "id": "apo1103", "price": 250, "description": "anillo plata-oro", "check": false, "modal": false, "type": "anillo", "show": true },
     { "id": "apo1119", "price": 800, "description": "anillo plata-oro", "check": false, "modal": false, "type": "anillo", "show": true },
     { "id": "ca1103", "price": 1700, "description": "cadena acero", "check": false, "modal": false, "type": "cadena", "show": true },
